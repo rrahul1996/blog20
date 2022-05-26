@@ -9,7 +9,7 @@ const [cats, setCats] = useState([]);
   useEffect(() => {
     const getCats = async () => 
     {
-      const res = await axios.get("http://localhost:5000/api/categories");
+      const res = await axios.get("https://tranquil-brushlands-37783.herokuapp.com/api/categories");
       setCats(res.data)
     }
     getCats();

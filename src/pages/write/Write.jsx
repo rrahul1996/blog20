@@ -29,7 +29,7 @@ export default function Write() {
       }
     }
     try {
-     const res = await axios.post("http://localhost:5000/api/posts", newPost);
+     const res = await axios.post("https://tranquil-brushlands-37783.herokuapp.com/api/posts", newPost);
      console.log(res.data)
      window.location.replace("post/" + res.data._id)
     } catch (err) {
